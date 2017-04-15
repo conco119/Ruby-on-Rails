@@ -21,3 +21,22 @@
 
 en:
   hello: "Hello world"
+  layouts:
+    application:
+      dynamic_title: "Ruby on Rails Sample App"
+      english: "English"
+      vietnam: "VietNam"
+  static_pages:
+    home:
+      title: "Home"
+      content: "This is home page"
+    help:
+      title: "Help"
+      content: "This is help page"
+    about:
+      title: "About"
+      content: "The %{r_tut} is a %{r_book} and %{r_screencast} to teach web development with %{r_rails}. This is the sample application for the tutorial"
+      r_tut: "Ruby on Rails Tutorial"
+      r_book: "book"
+      r_screencast: "Screencast series"
+      r_rails: "Ruby on Rails"
