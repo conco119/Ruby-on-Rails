@@ -1,0 +1,9 @@
+<% provide :title, t(".title") %>
+<h1><%= t ".title" %></h1>
+<p>
+  <%= raw t(".content",
+    r_book: link_to(t(".r_book"), "http://youtube.com"),
+    r_screencast: link_to(t(".r_screencast"), "http://youtube.com"),
+    r_rails: link_to(t(".r_rails"), "http://www.youtube.com/"),
+    r_tut: link_to(t(".r_tut"), "http://www.facebook.com")) %>
+</p>
