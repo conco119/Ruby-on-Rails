@@ -23,13 +23,30 @@ en:
   hello: "Hello world"
   layouts:
     application:
-      dynamic_title: "Ruby on Rails Sample App"
+      dynamic_title: "Ruby on Rails Tutorial Sample App"
       english: "English"
       vietnam: "VietNam"
+    header:
+      home: "Home"
+      help: "Help"
+      about: "About"
+      contact: "Contact"
+      sample_app: "Sample_app"
+    footer:
+      info: "The %{r_tut} by %{author}"
+      r_tut: "Ruby on Rails Tutorial"
+      author: "Micheal Hartl"
+      about: "About"
+      contact: "Contact"
+      news: "News"
   static_pages:
     home:
       title: "Home"
       content: "This is home page"
+      welcome: "Welcome to the sample apps"
+      intro: "This is the home page for %{r_tut} sample application."
+      r_tut: "Ruby on Rails Tutorial"
+      sign_up: "Sign up now"
     help:
       title: "Help"
       content: "This is help page"
@@ -40,3 +57,6 @@ en:
       r_book: "book"
       r_screencast: "Screencast series"
       r_rails: "Ruby on Rails"
+    contact:
+      title: "Contact"
+      content: "Contact Page"
