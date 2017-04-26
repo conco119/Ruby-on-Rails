@@ -60,3 +60,16 @@ en:
     contact:
       title: "Contact"
       content: "Contact Page"
+  users:
+    new:
+      title: "Sign up"
+      create: "Create my account"
+      confirm: "Confirmation"
+    show:
+      error_flash: "User does not exit"
+    create:
+      welcome: "Welcome to the Sample App"
+  shared:
+    error_messages:
+      error: "error"
+      form_contain: "The form contain "
