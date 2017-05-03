@@ -32,6 +32,11 @@ en:
       about: "About"
       contact: "Contact"
       sample_app: "Sample_app"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      login: "Log in"
+      account: "Account"
     footer:
       info: "The %{r_tut} by %{author}"
       r_tut: "Ruby on Rails Tutorial"
@@ -73,3 +78,10 @@ en:
     error_messages:
       error: "error"
       form_contain: "The form contain "
+  sessions:
+    new:
+      title: "Log in"
+      register: "Sign up now"
+      new_user: "New user?"
+    create:
+      invalid: "Invalid email or password"
