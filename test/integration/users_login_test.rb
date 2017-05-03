@@ -5,6 +5,34 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     @user = users(:hd)
   end
 
+  test "login with remember me" do
+    log_in_as @user, remember_me: "1"
+    assert_equal cookies["remember_token"], assigns(:user).remember_token
+  end
+
+  test "login without remember_me" do
+    log_in_as @user, remember_me: "1"
+    log_in_as @user, remember_me: "0"
+    assert_empty cookies["remember_token"]
+
+  end
+
+  test "login with vaild infomation followed by logout" do
+    get login_path
+    post login_path, params: {session: {email: @user.email, password: "1234567" }}
+    assert is_logged_in?
+    assert_redirected_to @user
+    follow_redirect!
+    assert "users/show"
+    delete logout_path
+    assert_redirected_to root_path
+    assert_not is_logged_in?
+    follow_redirect!
+    assert_select "a[href=?]", login_path
+    # simute a user clicking on second windows brower
+    delete logout_path
+  end
+
   test "login with invalid infomation" do
     get login_path
     assert_template "sessions/new"

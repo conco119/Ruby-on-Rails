@@ -1,5 +1,5 @@
 hd:
   id: "1"
-  name: "haiduy"
+  name: "nguyencaudien"
   email: "hd@gmail.com"
   password_digest: <%= User.digest "1234567" %>

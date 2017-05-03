@@ -4,6 +4,9 @@ class UserTest < ActiveSupport::TestCase
   def setup
     @user = User.new email: "validemail@gmail.com", password: "12345678", password_confirmation: "12345678"
   end
+  test "authenticate? should return false for user with nil digest" do
+    assert_not @user.authenticated? ""
+  end
   test "password should be presence" do
     @user.password = @user.password_confirmation = " " * 6
     assert_not @user.valid?
