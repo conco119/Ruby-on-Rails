@@ -83,5 +83,6 @@ en:
       title: "Log in"
       register: "Sign up now"
       new_user: "New user?"
+      remember: "Remember me on this computer"
     create:
       invalid: "Invalid email or password"
