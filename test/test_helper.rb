@@ -8,10 +8,11 @@ class ActiveSupport::TestCase
   def is_logged_in?
     session[:user_id].present?
   end
+
   #log in as particular user
-  #def log_in_as user
-  #  session[:user_id] = user.id
-  #end
+  def log_in_as user
+    session[:user_id] = user.id
+  end
   # Add more helper methods to be used by all tests here...
 end
 
@@ -21,5 +22,5 @@ class ActionDispatch::IntegrationTest
     post login_path, params:{session:{email: user.email, password: password,
       remember_me: remember_me}}
   end
-  
+
 end
