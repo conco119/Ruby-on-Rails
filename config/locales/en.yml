@@ -37,6 +37,7 @@ en:
       logout: "Log out"
       login: "Log in"
       account: "Account"
+      users: "Users"
     footer:
       info: "The %{r_tut} by %{author}"
       r_tut: "Ruby on Rails Tutorial"
@@ -66,14 +67,28 @@ en:
       title: "Contact"
       content: "Contact Page"
   users:
+    user:
+      delete: "Delete"
+      yousure: "Are you sure"
+    index:
+      allusr: "All users"
+    form:
+      confirm: "Confirmation"
+    edit:
+      title: "Edit"
+      button: "Save change"
+      confirm: "Confirmation"
+      change: "Change"
     new:
       title: "Sign up"
       create: "Create my account"
       confirm: "Confirmation"
-    show:
-      error_flash: "User does not exit"
     create:
       welcome: "Welcome to the Sample App"
+    mesnlgin: "Please log in"
+    updpro: "Profile Updated"
+    error_flash: "User does not exit"
+    deleted: "User deleted"
   shared:
     error_messages:
       error: "error"

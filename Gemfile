@@ -5,9 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem "will_paginate", "3.1.0"
+gem "bootstrap-will_paginate", "0.0.10"
 gem "rails", "~> 5.0.2"
 gem "bcrypt","3.1.11"
+gem "faker", "~> 1.6", ">= 1.6.3"
 gem "sqlite3"
 gem "puma", "~> 3.0"
 gem "sass-rails", "~> 5.0"

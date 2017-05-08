@@ -1,5 +1,16 @@
 hd:
   id: "1"
-  name: "nguyencaudien"
+  name: "nguyenhaiduy_fromcaudien"
   email: "hd@gmail.com"
   password_digest: <%= User.digest "1234567" %>
+nt:
+  id: "2"
+  name: "nguyentieu"
+  email: "nt@gmail.com"
+  password_digest: <%= User.digest "1234567" %>
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest("1234567") %>
+<% end %>
